@@ -31,4 +31,4 @@ const emailWorker = new Worker(
     }
 );
 
-module.exports = { emailQueue };
+module.exports = { emailQueue, emailWorker };
