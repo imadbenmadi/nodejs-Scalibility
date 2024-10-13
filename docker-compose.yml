@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: node-scalable-app
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/node_scaling
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JWT_SECRET=mysecretkey
+    depends_on:
+      - mongo
+      - redis
+
+  mongo:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis
+    container_name: redis-server
+    ports:
+      - "6379:6379"
