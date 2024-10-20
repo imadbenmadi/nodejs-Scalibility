@@ -17,7 +17,7 @@ Here’s a comprehensive guide to BullMQ and how to use it:
    ```
    You also need to have a Redis server running. You can install Redis locally or use a cloud provider like RedisLabs.
    
-** where you can use BullMQ : ** 
+### **where you can use BullMQ :** 
 1. **Background Job Processing**
 2. **Email Notifications**
 3. **Data Processing**
