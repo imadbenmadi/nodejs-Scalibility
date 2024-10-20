@@ -2,7 +2,7 @@ BullMQ is a powerful queue and job management library for Node.js, built on top 
 
 Here’s a comprehensive guide to BullMQ and how to use it:
 
-### 1. **What is BullMQ?**
+### 1. **What is BullMQ? **
    - **Job Queue**: BullMQ allows you to create job queues where you can schedule and process jobs asynchronously.
    - **Redis Backend**: It uses Redis for storing jobs and their states (pending, completed, failed, etc.).
    - **Concurrency**: You can process multiple jobs at the same time, making it highly scalable.
@@ -17,7 +17,7 @@ Here’s a comprehensive guide to BullMQ and how to use it:
    ```
    You also need to have a Redis server running. You can install Redis locally or use a cloud provider like RedisLabs.
    
-**where you can use BullMQ : ** 
+** where you can use BullMQ : ** 
 1. **Background Job Processing**
 2. **Email Notifications**
 3. **Data Processing**
